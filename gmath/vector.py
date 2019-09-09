@@ -15,7 +15,7 @@ class BaseVec(np.ndarray):
         return np.sqrt((self ** 2).sum())
 
     def normalize(self) -> 'BaseVec':
-        return BaseVec(self / self.length)
+        return self / self.length
 
 
 class Vec3(BaseVec):
