@@ -8,6 +8,7 @@ from help import group_by
 
 @dataclass
 class Face:
+    """Face class"""
     p0: vec3
     p1: vec3
     p2: vec3
@@ -29,7 +30,7 @@ class Mesh:
     scale: vec3 = vec3(1., 1., 1.)
 
     @property
-    def faces(self):
+    def faces(self) -> Face:
         for p0, p1, p2 in group_by(self.indexes, 3):
             yield Face(self.vertexes[p0 - 1], self.vertexes[p1 - 1], self.vertexes[p2 - 1])
 
