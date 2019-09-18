@@ -9,6 +9,7 @@ verify_ssl = true
 numpy = "*"
 Pillow = "*"
 pyrr = "*"
+pyglm = "*"
 
 [requires]
 python_version = "3.7"
