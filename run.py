@@ -44,7 +44,7 @@ class Display:
         self._window.mainloop()
 
 
-obj = Mesh.from_obj_file('./head.obj')
+obj = Mesh.from_obj_file('./models/head.obj')
 window = Display(WIDTH, HEIGHT, 'Software 3D render')
 window.meshes.extend([obj])
 window.run()
